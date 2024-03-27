@@ -1,5 +1,5 @@
 {
-  "name": "week11",
+  "name": "courses-app",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -20,5 +20,11 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/mongoose": "^5.11.97",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.2.3"
+  }
 }

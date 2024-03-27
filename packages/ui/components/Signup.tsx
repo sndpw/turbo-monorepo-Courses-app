@@ -1,10 +1,12 @@
-'use client';
+"use client";
 
 import { Button, Card, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 
-export const Signup = () => {
-  const [email, setEmail] = useState("");
+export function Signup(props: {
+  onClick: (username: string, password: string) => void
+}) {
+  const [username, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
@@ -45,8 +47,13 @@ export const Signup = () => {
           <br />
           <br />
 
-          <Button size={"large"} variant="contained" onClick={async () => {}}>
-            {" "}
+          <Button
+            size={"large"}
+            variant="contained"
+            onClick={async () => {
+              props.onClick(username, password);
+            }}
+          >
             Signin
           </Button>
         </Card>

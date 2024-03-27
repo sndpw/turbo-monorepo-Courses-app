@@ -6,7 +6,8 @@
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
-    "./components/*": "./components/*.tsx"
+    "./components/*": "./components/*.tsx",
+    "./lib/*": "./lib/*"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -27,6 +28,9 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.14"
+    "@mui/material": "^5.15.14",
+    "@types/mongoose": "^5.11.97",
+    "mongoose": "^8.2.3",
+    "dotenv": "^16.4.5"
   }
 }
