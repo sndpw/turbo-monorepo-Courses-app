@@ -24,7 +24,6 @@ export async function POST(request: Request) {
     const token = jwt.sign({ username, role: "admin" }, SECRET, {
       expiresIn: "1h",
     });
-    console.log(token);
     Response.json({ message: "Admin created successfully", token });
   }
   return Response.json("", { status: 200 });
